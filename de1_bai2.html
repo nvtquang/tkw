@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+<script>
+    function Tim(){
+        let chuoi = document.getElementById("chuoi").value.trim();
+        let mangTu = chuoi.split(/\s+/);
+        let dem = 0;
+        for(let tu of mangTu){
+            if(tu.length === 4 && tu[0].toLowerCase() === 'm'){
+                dem++;
+            }
+        }
+        document.getElementById("kq").value = dem;
+    }
+</script>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th>Nhập chuỗi: </th>
+                <td><input type="text" id="chuoi"></td>
+            </tr>
+            <tr>
+                <th>Số từ có 4 ký tự:</th>
+                <td><input type="text" id="kq"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="button" value="Tìm" onclick="Tim()">
+                    <input type="reset" value="Huy bo">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

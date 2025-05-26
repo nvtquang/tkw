@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+</head>
+<style>
+    header{
+        display: flex;
+        background-color: white;
+        padding: 10px 20px;
+        align-items: center;
+        gap: 10px;
+    }
+    header #logo{
+        width: 15%;
+        height: 50px;
+    }
+    header #headermid{
+        width: 60%;
+        padding-left: 30%;
+        border-radius: 4px;
+        align-items: center;
+    }
+    header #headerright{
+        width: 25%;
+        background-color: pink;
+        color: white;
+        padding: 8px;
+    }
+    header #headerright:hover{
+        background-color: yellow;
+        color: red;
+    }
+    nav{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .menu1{
+        display: flex;
+        background-color: black;
+        padding: 0;
+        list-style: none;
+        height: 50px;
+       justify-content: center;
+    }
+    .menu1 li{
+        position: relative;
+        display: flex;
+    }
+    .menu1 a{
+        display: block;
+        padding: 15px 20px;
+        color: white;
+        text-decoration: none;
+        background-color: black;
+    }
+    .menu1 a:hover{
+        background-color: pink;
+    }
+    .menu2{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        background-color: white;
+        display: none;
+        z-index: 100;
+        list-style: none;
+        min-width: 180px;
+    }
+    .menu1 li:hover ul{
+        display: block;
+    }
+    .menu2 li a{
+        color: black;
+        background-color: white;
+    }
+    .menu2 li a:hover{
+        background-color: #f0f0f0;
+    }
+    .top{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .topleft{
+        width: 50%;
+        padding: 15px 20px;
+    }
+    .topright{
+        width: 50%;
+        padding: 15px 20px;
+    }
+    .content{
+        display: flex;
+        gap: 40px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .sanpham{
+        position: relative;
+        width: 400px;
+        background-color: #003366;
+        border: 1px solid #ccc;
+    }
+    .thongtin{
+        padding: 10px;
+        color: white;
+        text-align: center;
+    }
+    
+</style>
+<body>
+    <header>
+        <img id="logo" style="width: 50px;" src="logo.jpg" alt="">
+        <div id="headermid">
+            <input  type="text" placeholder="Search ... ">
+        <select name="" id="" >
+            <option value="">Categories</option>
+            <option value="">Categories 1</option>
+            <option value="">Categories 2</option>
+        </select>
+        </div>
+        <button id="headerright" >0 item(S) - $0.00</button>
+    </header>
+    <nav>
+        <ul class="menu1">
+            <li><a href="">Home</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">Men</a>
+                <ul class="menu2">
+                    <li><a href="">Coat</a></li>
+                    <li><a href="">T-shirts</a></li>
+                    <li><a href="">Tennis</a></li>
+                </ul>
+            </li>
+            <li><a href="">Jewelry</a></li>
+            <li><a href="">Books</a></li>
+            <li><a href="">Clothing</a></li>
+            <li><a href="">Jeans</a></li>
+            <li><a href="">Accessories</a></li>
+            <li><a href="">Blog</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="top">
+            <div class="topleft">
+                <button>Grid</button>
+                <button>List</button>
+                <select name="" id="">
+                    <option value="">Default</option>
+                    <option value="">Price</option>
+                </select>
+                <select name="" id="">
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                </select>
+            </div>
+            <div class="topright">
+                <button style="background-color: black; color: white;">1</button>
+                <button style="background-color: white;color: black;">2</button>
+                <button style="background-color: white;color: black;">3</button>
+                <button style="background-color: white;color: black;">></button>
+                <button style="background-color: white;color: black;">>-</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sanpham">
+            <div class="anhbia">
+                <img style="width: 400px;height: 250px;" src="marvel-spiderman-red-moon-desktop-wallpaper-preview.jpg" alt="">
+            </div>
+            <div class="thongtin">
+                <h3>Apple Cinema 30''</h3>
+                <p>★★★★★</p>
+                <p>$110.00</p><p style="text-decoration: line-through;" >$122.00</p>
+            </div>
+        </div>
+        <div class="sanpham">
+            <div class="anhbia">
+                <img style="width: 400px;height: 250px;" src="miles-morales-swinging-night-desktop-wallpaper-preview.jpg" alt="">
+            </div>
+            <div class="thongtin">
+                <h3>Canon EOS 5D</h3>
+                <p>★★★★★</p>
+                <p>$98.00</p><p style="text-decoration: line-through;">$122.00</p>
+            </div>
+        </div>
+        <div class="sanpham">
+            <div class="anhbia">
+                <img style="width: 400px;height: 250px;" src="wallpaperflare.com_wallpaper.jpg" alt="">
+            </div>
+            <div class="thongtin">
+                <h3>Apple Cinema 50''</h3>
+                <p>★★★★★</p>
+                <p>$98.00</p><p style="text-decoration: line-through;">$122.00</p>
+            </div>
+        </div>
+        </div>
+    </main>
+</body>
+</html>
