@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai2</title>
+</head>
+<style>
+    table{
+        background-color: skyblue;
+    }
+    table tr td {
+        border: 1px solid gray;
+    }
+</style>
+<script>
+    function SapXep(){
+        let cau = document.getElementById('cau').value.trim();
+        let tu = cau.split(/\s+/);
+        document.getElementById('kq').value = tu.sort().join(" ");
+    }
+</script>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th colspan="2" style="border: 1px solid gray;">SAP CAU THEO QUY LUAT</th>
+            </tr>
+            <tr>
+                <td>Nhap cau ban dau: </td>
+                <td><input type="text" id="cau"></td>
+            </tr>
+            <tr>
+                <td>Cau sau khi sap xep: </td>
+                <td><input type="text" id="kq"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="button" value="Sap xep" onclick="SapXep()">
+                    <input type="reset" value="Viet lai">
+                </td>
+                
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

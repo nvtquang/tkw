@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai1</title>
+</head>
+<style>
+    header{
+        display: flex;
+        padding: 0%;
+        margin: 0%;
+        background-size: cover;
+        position: relative;
+        background-image: url('marvel-spiderman-red-moon-desktop-wallpaper-preview.jpg');
+    }
+    header img{
+        width: 30%;
+        padding: 15px 20px;
+    }
+    header h2{
+        width: 70%;
+        text-align: center;
+        padding: 15px 20px ;
+    }
+    nav{
+        display: flex;
+        gap: 30%;
+        background-color: dodgerblue;
+        height: 30px;
+    }
+    .n1{
+        gap: 10%;
+        padding: 5px 15px;
+    }
+    .n2{
+        display: flex;
+        gap: 0%;
+    }
+    nav .n1 a{
+        text-decoration: none;
+        color: white; 
+        gap: 10%;
+    }
+    main{
+        display: flex;
+        padding: 0%;
+        margin: 0%;
+    }
+    .menu{
+        width: 25%;
+    }
+    .menu1{
+        background-color: dodgerblue;
+        padding: 0%;
+        list-style: none;
+        height: 250px;
+    }
+    .menu1 li{
+        position: relative;
+    }
+    .menu1 li a{
+        display: block;
+        padding: 15px 20px;
+        color: white;
+        text-decoration: none;
+    }
+    .menu1 li a:hover{
+        background-color: cornflowerblue;
+    }
+    .menu1 li:hover ul{
+        display: block;
+    }
+    .menu2{
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        display: none;
+        z-index: 100;
+        list-style: none;
+        background-color: dodgerblue;
+    }
+    .menu2 li:hover{
+        background-color: cornflowerblue;
+    }
+    .ct{
+        width: 75%;
+        padding-left: 9%;
+    }
+    .up, .bot{
+        display: flex;
+        gap: 10px;
+    }
+
+    
+</style>
+<body>
+    <header>
+        <img style="width: 100px; height: 100px;" src="logo.jpg" alt="">
+        <h2>BAO THACH MINERAL & PRODUCTION COMPANY LIMITED <br>
+        <p>Address : But Phong , Lien Son, Kim Bang, Ha Nam</p>
+        </h2>
+    </header>
+    <nav>
+        <div class="n1">
+            <a href="">Trang chu</a>
+            <a href="">San pham</a>
+            <a href="">Gioi thieu</a>
+            <a href="">Tin tuc</a>
+            <a href="">Lien he</a>
+        </div>
+        <div class="n2">
+            <button>Viet</button>
+            <button>Eng</button>
+        </div>
+        <div class="n3">
+            <input type="text" placeholder="Nhap tu khoa tim kiem">
+        </div>
+    </nav>
+    <main>
+        <div class="menu">
+            <h3 style="background-color: rgb(84, 84, 238);height: 50px;">THEO UNG DUNG</h3>
+            <ul class="menu1">
+                <li><a href="">NL Nganh thuc an chan nuoi</a></li>
+                <li><a href="">NL Nganh thuy hai san</a></li>
+                <li><a href="">NL Nganh SX phan bon</a></li>
+                <li><a href="">Nguyen vat lieu xay dung</a></li>
+                <li><a href="">Cac nganh khac</a>
+                    <ul class="menu2">
+                        <li><a href="">NL nganh kinh</a></li>
+                        <li><a href="">NL nganh luyen kim</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="ct">
+            <div>
+                <h3 style="background-color: dodgerblue; color: white;width: 250px;height: 50px;">SAN PHAM CUNG LOAI</h3>
+            </div>
+            <div class="up">
+                <div class="sp">
+                    <img style="width: 250px; height: 150px;" src="tienquang.jpg" alt="">
+                    <h5 style="text-align: center;">hat silic loai 2</h5>
+                </div>
+                <div class="sp">
+                    <img style="width: 250px; height: 150px;" src="tienquang.jpg" alt="">
+                    <h5 style="text-align: center;">hat silic loai 1</h5>
+                </div>
+                <div class="sp">
+                    <img style="width: 250px; height: 150px;" src="tienquang.jpg" alt="">
+                    <h5 style="text-align: center;">soi cuoi bac trang</h5>
+                </div>
+                <div class="sp">
+                    <img style="width: 250px; height: 150px;" src="tienquang.jpg" alt="">
+                    <h5 style="text-align: center;">soi cuoi trang</h5>
+                </div>
+            </div>
+            <div class="bot">
+                <div class="sp">
+                    <img style="width: 250px; height: 150px;" src="tienquang.jpg" alt="">
+                    <h5 style="text-align: center;">soi cuoi tu nhien</h5>
+                </div>
+                <div class="sp">
+                    <img style="width: 250px; height: 150px;" src="tienquang.jpg" alt="">
+                    <h5 style="text-align: center;"> soi van may</h5>
+                </div>
+                <div class="sp">
+                    <img style="width: 250px; height: 150px;" src="tienquang.jpg" alt="">
+                    <h5 style="text-align: center;">cat silic</h5>
+                </div>
+                <div class="sp">
+                    <img style="width: 250px; height: 150px;" src="tienquang.jpg" alt="">
+                    <h5 style="text-align: center;">cat silic loai 1</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
